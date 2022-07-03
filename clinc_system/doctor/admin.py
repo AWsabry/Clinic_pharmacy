@@ -3,7 +3,14 @@ from django.contrib import admin
 from doctor.models import Disease, Medcine, Medicine_items, Roshetta
 import requests
 
+
+
 # Register your models here.
+
+
+
+
+
 
 
 class DiseaseAdmin(admin.ModelAdmin):
