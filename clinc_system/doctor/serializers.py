@@ -10,7 +10,7 @@ class MedcineSerializer(serializers.ModelSerializer):
                     "stock", "id", "created", "active",'description']
 
 
-class RoshettaSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Roshetta
-        fields = '__all__'
+# class RoshettaSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Roshetta
+#         fields = ['description']

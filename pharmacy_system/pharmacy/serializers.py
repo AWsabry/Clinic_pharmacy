@@ -1,4 +1,4 @@
-from pharmacy.models import Medcine, Testing_API
+from pharmacy.models import Medcine, Roshetta
 from rest_framework import serializers
 
 
@@ -7,8 +7,10 @@ from rest_framework import serializers
 #         model = Testing_API
 #         fields = ['id','name','is_active',]
 
-
-
+class RoshettaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Roshetta
+        fields = '__all__'
 class MedcineSerializer(serializers.ModelSerializer):
     class Meta:
         model = Medcine

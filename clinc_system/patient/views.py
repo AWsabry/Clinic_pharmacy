@@ -1,4 +1,5 @@
 from django.shortcuts import redirect, render
+from doctor.models import Roshetta
 from patient.forms import AppointmentForm, LoginForm, RegisterForm
 from django.views.decorators.csrf import csrf_exempt
 from patient.models import Appointment, Profile
@@ -28,8 +29,11 @@ def login(request):
 
 
 def index(request):
-    # x = Roshetta.objects.filter(user= request.user).all()
-    # print(x)
+    if request.user.is_authenticated:
+        x = Roshetta.objects.filter(user= request.user).values()
+        print(x)
+    else :
+        pass
     return render(request, 'index.html',)
 
 

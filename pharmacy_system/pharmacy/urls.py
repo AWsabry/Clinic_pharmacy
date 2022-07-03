@@ -8,6 +8,6 @@ app_name = 'pharmacy'
 
 urlpatterns = [
     path('', view=views.index, name='index'),
-    # path('testing/', view=views.testing, name='testing'),
+    path('get_roshetta/', view=views.get_roshetta, name='get_roshetta'),
 
 ]
